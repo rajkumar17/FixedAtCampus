@@ -1,0 +1,42 @@
+<ion-content class="vertical-align-content">
+<ion-grid>
+<ion-row center>
+	<ion-col center>
+		<br><br><br><br>
+		<img class="logo" src="./assets/img/logo.png">
+<br>
+<br>
+<br>
+<form  (ngSubmit)="openWebpage()" #loginForm="ngForm">
+
+  <ion-item>
+
+    <ion-label>Please select the Institution</ion-label>
+    <ion-select  name="instance" [(ngModel)]="loginCredentials.url" required>
+
+   <ion-select-option *ngFor="let x of posts" [value]="x.api_url">{{x.institution_name}}</ion-select-option>
+    </ion-select>
+
+  </ion-item>
+   
+    <ion-item>
+      <ion-label position="floating">User Name</ion-label>
+      <ion-input type="text" name="username" [(ngModel)]="loginCredentials.username" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Registered Mobile No</ion-label>
+      <ion-input type="number" name="phone" [(ngModel)]="loginCredentials.phone" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" name="password" [(ngModel)]="loginCredentials.password" required></ion-input>
+    </ion-item>
+    
+
+
+  <ion-button expand="block" type="submit" color="primary">Login</ion-button>
+</form>
+          </ion-col>	
+      </ion-row>
+</ion-grid>
+</ion-content>

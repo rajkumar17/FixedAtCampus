@@ -1,0 +1,81 @@
+app-login {
+
+  .button-md{
+    background-color:#0e5da0;
+  }
+.info-box {
+    padding-top: 10px;
+  }
+  .list-header {
+    background-color: #ccc;
+  }
+  .content
+  {
+	text-align:center;
+  }
+  .logo
+  {
+	width:75%;
+  margin-bottom:40px;
+  }
+      scroll-content {
+        display: flex;
+        flex-direction: row;
+    }
+ 
+    ion-grid {
+        padding: 0;
+        height: 100%;
+             align-content: center!important;
+     align-items: center!important;
+     flex-direction: row!important;
+    }
+ 
+    ion-row {
+        flex: 1;
+    }
+    .item-label-stacked .text-input-md, .item-label-floating .text-input-md
+    {
+		margin:8px 0;
+		width:100%;
+		border:1px solid #d1a0a4;
+		background:#f6f6f6;
+		height:40px;
+		border-radius:3px;
+    }
+    .item-md.item-block .item-inner
+    {
+		border:none;
+		padding-right:0;
+    }
+    .label-md[stacked]
+    {
+		font-size:1em;
+		color:#2a2a2a;
+    }
+    a
+    {
+		text-decoration:none;
+		border-bottom:1px solid #b92835;
+		color:#2b2b2b;
+    display:inline-block;
+    margin-top:50px;
+    }
+    .item-md
+    {
+		padding:0px 20px;
+    }
+    .input-cover
+    {position:static} 
+    .vertical-align-content > *
+{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
+}
+.tnc
+{
+
+}
+}
+
